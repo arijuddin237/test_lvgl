@@ -1,25 +1,20 @@
-<globals>
-    <api>
-        <!-- Add <enumdefs> here -->
-    </api>
-
-    <consts>
-        <!-- Add <px>, <int>, <color> etc here -->
-    </consts>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<global>
     <styles>
-        <!-- Add <style> tags here -->
+        <style id="style_data_box">
+            <bg_color>0x000000</bg_color>
+            <border_color>0x666666</border_color>
+            <border_width>1</border_width>
+            <radius>8</radius>
+        </style>
+        
+        <style id="style_text_title">
+            <text_color>0xAAAAAA</text_color>
+            <text_font>ui/fonts/montserrat_14.ttf</text_font>
+        </style>
+        <style id="style_text_value">
+            <text_color>0xFFFFFF</text_color>
+            <text_font>ui/fonts/montserrat_16.ttf</text_font>
+        </style>
     </styles>
-
-    <subjects>
-        <!-- Add <int>, <string>, or <float> subjects here -->
-    </subjects>
-
-    <images>
-        <!-- Add <file> or <data> tags here -->
-    </images>
-
-    <fonts>
-        <!-- Add <bin> , <tiny_ttf>, <freetype> tags here -->
-    </fonts>
-</globals>
+</global>
