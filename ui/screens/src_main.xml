@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obj id="scr_main" width="480" height="320">
+    <style>
+        <bg_color>0x000000</bg_color>
+        <bg_opa>255</bg_opa>
+    </style>
+    <children>
+
+        <arc id="rpm_gauge" width="240" height="240" align="LV_ALIGN_LEFT_MID" x="20" y="0">
+            <rotation>135</rotation>
+            <bg_angles start="0" end="270"/>
+            <value>70</value>
+            <style part="LV_PART_INDICATOR">
+                <arc_color>0x0000FF</arc_color>
+                <arc_width>25</arc_width>
+            </style>
+            <style part="LV_PART_MAIN">
+                <arc_color>0x111111</arc_color>
+                <arc_width>5</arc_width>
+            </style>
+            <style part="LV_PART_KNOB">
+                <opa>0</opa>
+            </style>
+            <children>
+                <label id="lbl_rpm_title" align="LV_ALIGN_CENTER" x="0" y="-20">
+                    <text>RPM</text>
+                    <style>
+                        <text_color>0xFFFFFF</text_color>
+                        <text_font>ui/fonts/montserrat_18.ttf</text_font>
+                    </style>
+                </label>
+                <label id="lbl_rpm_val" align="LV_ALIGN_CENTER" x="0" y="15">
+                    <text>4862</text>
+                    <style>
+                        <text_color>0xFFFFFF</text_color>
+                        <text_font>ui/fonts/montserrat_40.ttf</text_font>
+                    </style>
+                </label>
+            </children>
+        </arc>
+
+        <obj id="speed_container" width="180" height="80" align="LV_ALIGN_TOP_RIGHT" x="-120" y="20">
+            <style>
+                <bg_color>0x000000</bg_color>
+                <border_color>0x888888</border_color>
+                <border_width>2</border_width>
+                <radius>10</radius>
+            </style>
+            <children>
+                <label id="lbl_speed_val" align="LV_ALIGN_LEFT_MID" x="10" y="0">
+                    <text>062</text>
+                    <style>
+                        <text_color>0xFFFFFF</text_color>
+                        <text_font>ui/fonts/montserrat_48.ttf</text_font>
+                    </style>
+                </label>
+                <label id="lbl_speed_unit" align="LV_ALIGN_RIGHT_MID" x="-10" y="0">
+                    <text>GPS\nkm/h</text>
+                    <style>
+                        <text_color>0x00FF00</text_color>
+                        <text_font>ui/fonts/montserrat_14.ttf</text_font>
+                    </style>
+                </label>
+            </children>
+        </obj>
+
+        <obj id="map_container" width="80" height="80" align="LV_ALIGN_TOP_RIGHT" x="-20" y="20">
+            <style>
+                <bg_color>0xCCCCCC</bg_color>
+                <radius>10</radius>
+            </style>
+            <children>
+                <label id="lbl_map_title" align="LV_ALIGN_TOP_MID" x="0" y="5">
+                    <text>Map</text>
+                    <style>
+                        <text_color>0x777777</text_color>
+                        <text_font>ui/fonts/montserrat_12.ttf</text_font>
+                    </style>
+                </label>
+                <label id="lbl_map_val" align="LV_ALIGN_BOTTOM_MID" x="0" y="-5">
+                    <text>2</text>
+                    <style>
+                        <text_color>0x000000</text_color>
+                        <text_font>ui/fonts/montserrat_38.ttf</text_font>
+                    </style>
+                </label>
+            </children>
+        </obj>
+
+        <component name="ui_data_row" id="row_eot" align="LV_ALIGN_TOP_RIGHT" x="-20" y="115">
+            <param name="title">EOT</param>
+            <param name="value">75   %</param>
+        </component>
+
+        <component name="ui_data_row" id="row_tps" align="LV_ALIGN_TOP_RIGHT" x="-20" y="157">
+            <param name="title">TPS</param>
+            <param name="value">15  degree</param>
+        </component>
+
+        <component name="ui_data_row" id="row_bat" align="LV_ALIGN_TOP_RIGHT" x="-20" y="199">
+            <param name="title">BAT</param>
+            <param name="value">12.8   %</param>
+        </component>
+
+    </children>
+</obj>
