@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ui_data_row" width="240" height="34">
+    <style_ref>style_data_box</style_ref> 
+    
+    <children>
+        <label id="lbl_title" align="LV_ALIGN_LEFT_MID" x="10" y="0">
+            <text>{param.title}</text>
+            <style_ref>style_text_title</style_ref>
+        </label>
+        
+        <label id="lbl_value" align="LV_ALIGN_RIGHT_MID" x="-10" y="0">
+            <text>{param.value}</text>
+            <style_ref>style_text_value</style_ref>
+        </label>
+    </children>
+</component>
